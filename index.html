@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recordatorios Whatsapp</title>
+  <!-- Ajustar la ruta para el manifest -->
+  <link rel="manifest" href="/pwaluispinta/manifest.json">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <iframe src="https://script.google.com/macros/s/AKfycbz5vi3F6-Z5oFKG9ekqFfeob4UnbL26e8S8gPHNGHCIZNl4dhoWq9MdC66nFgTweCcz/exec" frameborder="0"></iframe>
+  <script>
+    // Ajustar la ruta para el service worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/calcestadistica/service-worker.js')
+      .then(registration => {
+        console.log('Service Worker registrado con éxito:', registration);
+      })
+      .catch(error => {
+        console.log('Fallo en el registro del Service Worker:', error);
+      });
+    }
+  </script>
+</body>
+</html>
