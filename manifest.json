@@ -1,0 +1,20 @@
+{
+  "short_name": "Recordatorios Whatsapp",
+  "name": "Recordatorios Whatsapp",
+  "icons": [
+    {
+      "src": "https://lh3.googleusercontent.com/5KHUjAAU4ydb31wxLamRJToyagXbxV0CDL0NU33RFSQBn12L2QbK75AsLhgYibDo9tk",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://lh3.googleusercontent.com/5KHUjAAU4ydb31wxLamRJToyagXbxV0CDL0NU33RFSQBn12L2QbK75AsLhgYibDo9tk",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/pwaluispinta/index.html",
+  "display": "standalone",
+  "background_color": "#25D366",
+  "theme_color": "#25D366"
+}
